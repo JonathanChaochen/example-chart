@@ -1,11 +1,14 @@
 import React from "react";
-import "./styles.css";
+import ErrorBoundary from "react-error-boundary";
+import Chart from "./Chart/index";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello Worlds Change</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <ErrorBoundary>
+      <div style={{ height: "1000px" }}>
+        <h1>Echart</h1>
+        <Chart />
+      </div>
+    </ErrorBoundary>
   );
 }
