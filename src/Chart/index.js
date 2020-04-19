@@ -9,9 +9,9 @@ function Chart(props) {
   const getOptions = () => {
     const option = {
       grid: {
-        left: "3%",
-        right: 120,
-        bottom: 40,
+        left: "1%",
+        right: 55,
+        bottom: 60,
         containLabel: true
       },
       dataset: {
@@ -34,7 +34,7 @@ function Chart(props) {
         }
       },
       xAxis: {
-        name: "Number of cases",
+        name: "Cases",
         type: "value"
       },
       yAxis: [
